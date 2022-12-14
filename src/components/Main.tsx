@@ -1,6 +1,11 @@
+import background from "../images/gamecube-background.jpg";
+import "../styles/Main.css"
+
 const Main = () => {
   return (
-    <main></main>
+    <main className="main">
+      <img className="main__background" src={background} alt="gamecube background" />
+    </main>
   )
 };
 

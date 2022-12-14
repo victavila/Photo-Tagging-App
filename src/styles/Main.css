@@ -1,0 +1,9 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__background {
+  width: 100%;
+}
