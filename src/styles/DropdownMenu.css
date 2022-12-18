@@ -1,0 +1,26 @@
+.dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #313131;
+  border-radius: 15px;
+}
+
+.dropdown__character {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown__character:hover {
+  background-color: #949494;
+}
+
+.dropdown__character > img {
+  height: 4rem;
+}
