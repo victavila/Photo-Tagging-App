@@ -30,3 +30,7 @@
 .header__character > img {
   height: 4rem;
 }
+
+.character__found {
+  opacity: 0.3;
+}

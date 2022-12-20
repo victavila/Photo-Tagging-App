@@ -17,6 +17,18 @@
   cursor: pointer;
 }
 
+.dropdown__character:first-child:hover {
+  background-color: #949494;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown__character:last-child:hover {
+  background-color: #949494;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
 .dropdown__character:hover {
   background-color: #949494;
 }
