@@ -1,0 +1,70 @@
+.gameover {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gameover__submission {
+  background-color: #1d1d1d;
+  color: #fff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submission__time {
+  padding: 20px 70px;
+  border-bottom: 1px solid #fff;
+  font-size: 1.5rem;
+}
+
+.submission__input {
+  padding: 20px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.submission__input > input {
+  background-color: #1d1d1d;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.submission__buttons {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn--red {
+  background-color: #920000;
+  color: #fff;
+}
+
+.btn--gray {
+  background-color: #525252;
+  color: #fff;
+}

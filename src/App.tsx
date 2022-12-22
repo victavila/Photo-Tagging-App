@@ -1,4 +1,5 @@
 import React from 'react';
+import GameOver from './components/GameOver';
 import Header from './components/Header';
 import Main from './components/Main';
 import AppContextProvider from './images/AppContextProvider';
@@ -9,6 +10,7 @@ function App() {
       <AppContextProvider>
         <Header />
         <Main />
+        <GameOver />
       </AppContextProvider>
     </div>
   );

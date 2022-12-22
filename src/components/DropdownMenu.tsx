@@ -21,7 +21,7 @@ const DropdownMenu = ({ x, y }: DropdownMenuProps) => {
   const style = {
     left: `${x*100 + 5}%`,
     top: `${y*100}%`
-  }
+  };
 
   const linkClicked = () => {
     if (linkCheck(x, y)) {
@@ -33,7 +33,6 @@ const DropdownMenu = ({ x, y }: DropdownMenuProps) => {
   const samusClicked = () => {
     if (samusCheck(x, y)) {
       setWasSamusFound(!wasSamusFound);
-      
     };
     setIsDropdownOpen(!isDropdownOpen);
   };
@@ -43,7 +42,7 @@ const DropdownMenu = ({ x, y }: DropdownMenuProps) => {
       setWasToadFound(!wasToadFound);
     };
     setIsDropdownOpen(!isDropdownOpen);
-  }
+  };
   
   return (
     <div className="dropdown" style={style}>
