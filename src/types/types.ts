@@ -45,3 +45,8 @@ export interface ToadContextProps {
   wasToadFound: boolean;
   setWasToadFound: React.Dispatch<React.SetStateAction<boolean>>;
 };
+
+export interface LeaderboardProps {
+  name: string;
+  time: number;
+};
