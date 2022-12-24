@@ -4,6 +4,7 @@ import { LinkProvider } from "../contexts/LinkContext";
 import { SamusProvider } from "../contexts/SamusContext";
 import { TimeProvider } from "../contexts/TimeContext";
 import { ToadProvider } from "../contexts/ToadContext";
+import { StartGameProvider } from "./StartGameContext";
 
 const AppContextProvider = ({ children }: {children: ReactNode}) => {
   return (
@@ -11,9 +12,11 @@ const AppContextProvider = ({ children }: {children: ReactNode}) => {
       <LinkProvider>
         <SamusProvider>
           <ToadProvider>
-            <TimeProvider>
-              {children}
-            </TimeProvider>
+            <StartGameProvider>
+              <TimeProvider>
+                {children}
+              </TimeProvider>
+            </StartGameProvider>
           </ToadProvider>
         </SamusProvider>
       </LinkProvider>

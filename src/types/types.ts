@@ -55,3 +55,8 @@ export interface TimeContextProps {
   time: number;
   setTime: React.Dispatch<React.SetStateAction<number>>;
 };
+
+export interface StartGameContextProps {
+  hasGameStarted: boolean;
+  setHasGameStarted: React.Dispatch<React.SetStateAction<boolean>>;
+}

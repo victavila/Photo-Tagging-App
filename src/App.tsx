@@ -2,6 +2,7 @@ import React from 'react';
 import GameOver from './components/GameOver';
 import Header from './components/Header';
 import Main from './components/Main';
+import StartGame from './components/StartGame';
 import AppContextProvider from './contexts/AppContextProvider';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         <Header />
         <Main />
         <GameOver />
+        <StartGame />
       </AppContextProvider>
     </div>
   );

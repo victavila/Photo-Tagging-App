@@ -1,0 +1,47 @@
+.start {
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.start__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #1d1d1d;
+  width: 500px;
+  height: 300px;
+  border-radius: 15px;
+  padding: 0 30px;
+}
+
+.icon {
+  font-size: 10rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon__text {
+  z-index: 2;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  font-size: 1.2rem;
+}

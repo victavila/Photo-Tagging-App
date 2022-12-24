@@ -2,17 +2,19 @@ import { ChangeEvent, useContext, useState } from "react";
 import { LinkContext } from "../contexts/LinkContext";
 import { SamusContext } from "../contexts/SamusContext";
 import { ToadContext } from "../contexts/ToadContext";
-import { LeaderboardProps, LinkContextProps, SamusContextProps, TimeContextProps, ToadContextProps } from "../types/types";
+import { LeaderboardProps, LinkContextProps, SamusContextProps, StartGameContextProps, TimeContextProps, ToadContextProps } from "../types/types";
 import storeData from "../utils/storeData";
 import "../styles/GameOver.css";
 import getLeaderboard from "../utils/getLeaderboard";
 import { TimeContext } from "../contexts/TimeContext";
+import { StartGameContext } from "../contexts/StartGameContext";
 
 const GameOver = () => {
   const {wasLinkFound, setWasLinkFound} = useContext(LinkContext) as LinkContextProps;
   const {wasSamusFound, setWasSamusFound} = useContext(SamusContext) as SamusContextProps;
   const {wasToadFound, setWasToadFound} = useContext(ToadContext) as ToadContextProps;
   const {time, setTime} = useContext(TimeContext) as TimeContextProps;
+  const {hasGameStarted, setHasGameStarted} = useContext(StartGameContext) as StartGameContextProps;
   const [name, setName] = useState("");
   const [leaderboard, setLeaderboard] = useState<LeaderboardProps[]>([]);
   const [leaderboardActive, setLeaderboardActive] = useState(false);
@@ -37,6 +39,7 @@ const GameOver = () => {
     setWasSamusFound(!wasSamusFound);
     setWasToadFound(!wasToadFound);
     setTime(0);
+    setHasGameStarted(!hasGameStarted);
   }
   
   return (
