@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { DropdownProvider } from "../contexts/DropdownContext";
 import { LinkProvider } from "../contexts/LinkContext";
 import { SamusProvider } from "../contexts/SamusContext";
+import { TimeProvider } from "../contexts/TimeContext";
 import { ToadProvider } from "../contexts/ToadContext";
 
 const AppContextProvider = ({ children }: {children: ReactNode}) => {
@@ -10,7 +11,9 @@ const AppContextProvider = ({ children }: {children: ReactNode}) => {
       <LinkProvider>
         <SamusProvider>
           <ToadProvider>
-            {children}
+            <TimeProvider>
+              {children}
+            </TimeProvider>
           </ToadProvider>
         </SamusProvider>
       </LinkProvider>

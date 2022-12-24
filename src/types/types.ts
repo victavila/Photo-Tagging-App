@@ -50,3 +50,8 @@ export interface LeaderboardProps {
   name: string;
   time: number;
 };
+
+export interface TimeContextProps {
+  time: number;
+  setTime: React.Dispatch<React.SetStateAction<number>>;
+};

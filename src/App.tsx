@@ -2,7 +2,7 @@ import React from 'react';
 import GameOver from './components/GameOver';
 import Header from './components/Header';
 import Main from './components/Main';
-import AppContextProvider from './images/AppContextProvider';
+import AppContextProvider from './contexts/AppContextProvider';
 
 function App() {
   return (
