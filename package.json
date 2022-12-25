@@ -45,5 +45,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://victavil.github.io/photo-tagging-app"
+  "homepage": "https://victavil.github.io/photo-tagging-app",
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
 }
